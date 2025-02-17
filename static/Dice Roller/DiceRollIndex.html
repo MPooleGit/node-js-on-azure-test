@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="rollDice()">
+    <header>
+        <h1>Dice Roller Game</h1>
+        <p>Click "Roll Dice" or press Enter to simulate rolling two dice. The numbers will be randomly generated.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Instructions</h2>
+            <p>Press "Roll Dice" to roll the dice. You can also press Enter to roll again.</p>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <div>
+                <label for="dice1">Dice 1:</label>
+                <input type="text" id="dice1" readonly />
+            </div>
+            <div>
+                <label for="dice2">Dice 2:</label>
+                <input type="text" id="dice2" readonly />
+            </div>
+        </section>
+
+        <button id="rollButton" autofocus onclick="rollDice()">Roll Dice</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
